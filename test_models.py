@@ -8,7 +8,7 @@ import numpy as np
 import pytest
 from numpy.testing import assert_allclose
 
-from panelsfa import CrossSectionalSFA, TimeDecayPanelSFA, EffectsPanelSFA
+from panelsfa import CrossSectionalSFA, TimeDecayPanelSFA, EffectsPanelSFA, TrueFixedEffectsSFA, TrueRandomEffectsSFA, FourComponentSFA
 
 # Set seed for reproducible synthetic data
 RNG = np.random.default_rng(42)
