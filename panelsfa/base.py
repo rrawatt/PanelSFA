@@ -12,6 +12,7 @@ Provides:
 import numpy as np
 from sklearn.base import BaseEstimator, RegressorMixin
 from sklearn.utils.validation import check_array, check_is_fitted
+from sklearn.metrics import make_scorer
 
 
 # ---------------------------------------------------------------------------
@@ -146,6 +147,33 @@ class _BaseSFA(BaseEstimator, RegressorMixin):
         beta += s * np.sqrt(sigma_sq / np.pi)
 
         return beta, max(sigma_sq, 1e-6)
+    
+
+    def sfa_log_likelihood_scorer(estimator, X, y, **kwargs):
+        """
+        Returns the maximized log-likelihood of the fitted model.
+        Higher is better.
+        """
+        # Ensure the model is fitted and has the log_likelihood_ attribute
+        if hasattr(estimator, "log_likelihood_"):
+            return estimator.log_likelihood_
+        else:
+            # Fallback for models that don't store it or haven't fit yet
+            return -np.inf
+
+    def sfa_mean_efficiency_scorer(estimator, X, y, **kwargs):
+        """
+        Returns the mean technical efficiency across the sample.
+        Useful if you want to find models that identify more 'reasonable'
+        efficiency distributions.
+        """
+        # score_efficiency returns TE \in (0, 1]
+        te = estimator.score_efficiency(X, y, **kwargs)
+        return np.mean(te)
+
+    # Wrap them using make_scorer
+    log_likelihood_scorer = make_scorer(sfa_log_likelihood_scorer, greater_is_better=True)
+    efficiency_scorer = make_scorer(sfa_mean_efficiency_scorer, greater_is_better=True)
 
     # ------------------------------------------------------------------
     # Stubs – must be overridden by subclasses
