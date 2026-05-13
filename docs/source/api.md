@@ -7,36 +7,49 @@ This section provides auto-generated documentation from the PanelSFA source code
 .. autoclass:: panelsfa.base._BaseSFA
    :members:
    :undoc-members:
+
 ```
 
 ## Cross-Sectional
-```.. autoclass:: panelsfa.CrossSectionalSFA
+
+```{eval-rst}
+.. autoclass:: panelsfa.CrossSectionalSFA
    :members:
    :show-inheritance:
+
 ```
 
 ## Standard Panel
-```.. autoclass:: panelsfa.TimeDecayPanelSFA
+
+```{eval-rst}
+.. autoclass:: panelsfa.TimeDecayPanelSFA
    :members:
    :show-inheritance:
 
-    .. autoclass:: panelsfa.EffectsPanelSFA
-    :members:
-    :show-inheritance:
+.. autoclass:: panelsfa.EffectsPanelSFA
+   :members:
+   :show-inheritance:
+
 ```
 
 ## Unobserved Heterogeneity
-```.. autoclass:: panelsfa.TrueFixedEffectsSFA
+
+```{eval-rst}
+.. autoclass:: panelsfa.TrueFixedEffectsSFA
    :members:
    :show-inheritance:
 
-    .. autoclass:: panelsfa.TrueRandomEffectsSFA
-    :members:
-    :show-inheritance:
+.. autoclass:: panelsfa.TrueRandomEffectsSFA
+   :members:
+   :show-inheritance:
+
 ```
 
 ## Multi-Component
-```.. autoclass:: panelsfa.FourComponentSFA
+
+```{eval-rst}
+.. autoclass:: panelsfa.FourComponentSFA
    :members:
    :show-inheritance:
+
 ```
