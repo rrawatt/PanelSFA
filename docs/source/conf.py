@@ -9,8 +9,8 @@
 project = 'PanelSFA'
 copyright = '2026, Adrish Jana, Rohit Rawat, Sukin S'
 author = 'Adrish Jana, Rohit Rawat, Sukin S'
-release = '0.1.1'
-
+release = '0.1.2'
+master_doc = 'index'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 

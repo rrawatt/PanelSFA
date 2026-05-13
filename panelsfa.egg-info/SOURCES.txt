@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+panelsfa/__init__.py
+panelsfa/base.py
+panelsfa/cross_sectional.py
+panelsfa/effects_panel.py
+panelsfa/four_component.py
+panelsfa/setup.py
+panelsfa/time_decay.py
+panelsfa/true_effects.py
+panelsfa.egg-info/PKG-INFO
+panelsfa.egg-info/SOURCES.txt
+panelsfa.egg-info/dependency_links.txt
+panelsfa.egg-info/requires.txt
+panelsfa.egg-info/top_level.txt

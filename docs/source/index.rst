@@ -7,9 +7,9 @@ PanelSFA: High-Performance Stochastic Frontier Analysis in Python
    :target: https://pypi.org/project/panelsfa/
    :alt: PyPI Version
 
-**PanelSFA** is a modern Python library designed to fill the "Python Gap" in econometric software[cite: 33, 40]. It brings production-grade Stochastic Frontier Analysis (SFA) to the scientific computing ecosystem with a focus on numerical stability, scikit-learn compatibility, and high-performance panel data estimation[cite: 34, 113, 179].
+**PanelSFA** is a modern Python library designed to fill the "Python Gap" in econometric software. It brings production-grade Stochastic Frontier Analysis (SFA) to the scientific computing ecosystem with a focus on numerical stability, scikit-learn compatibility, and high-performance panel data estimation.
 
-By replicating the capabilities of proprietary software like Stata, **PanelSFA** democratizes technical efficiency analysis for researchers and practitioners alike[cite: 41, 171, 178].
+By replicating the capabilities of proprietary software like Stata, **PanelSFA** democratizes technical efficiency analysis for researchers and practitioners alike.
 
 .. image:: https://img.shields.io/badge/License-MIT-yellow.svg
    :target: https://opensource.org/licenses/MIT
@@ -18,10 +18,10 @@ By replicating the capabilities of proprietary software like Stata, **PanelSFA**
 Key Features
 ------------
 
-* **Comprehensive Model Suite**: Implements foundational models like ALS (1977) and BC95, alongside advanced panel estimators like Greene's True Fixed Effects and the Four-Component model[cite: 41, 187, 189].
-* **Scikit-learn API**: Designed with an Estimator API for seamless integration into machine learning pipelines and hyperparameter searches[cite: 114, 115, 179].
-* **Numerical Stability**: Utilizes OLS warm-starts, parameter reparameterization (log/logit links), and L-BFGS-B optimization for reliable convergence on complex likelihood surfaces[cite: 119, 145, 146, 148].
-* **Performance**: Optimized for large panel datasets using vectorized operations and efficient memory management[cite: 113].
+* **Comprehensive Model Suite**: Implements foundational models like ALS (1977) and BC95, alongside advanced panel estimators like Greene's True Fixed Effects and the Four-Component model.
+* **Scikit-learn API**: Designed with an Estimator API for seamless integration into machine learning pipelines and hyperparameter searches.
+* **Numerical Stability**: Utilizes OLS warm-starts, parameter reparameterization (log/logit links), and L-BFGS-B optimization for reliable convergence on complex likelihood surfaces.
+* **Performance**: Optimized for large panel datasets using vectorized operations and efficient memory management.
 
 .. toctree::
    :maxdepth: 2
