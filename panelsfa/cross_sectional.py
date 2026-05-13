@@ -39,7 +39,7 @@ from .base import (
 
 
 # ---------------------------------------------------------------------------
-# Log-likelihood kernel – pure NumPy/SciPy, no JIT
+# Log-likelihood kernel – NumPy/SciPy
 # ---------------------------------------------------------------------------
 
 def _nll_als(theta, X, y, s):
