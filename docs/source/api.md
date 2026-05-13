@@ -3,25 +3,25 @@
 This section provides auto-generated documentation from the PanelSFA source code.
 
 ## Base Estimator
-```{eval-rst}
+{eval-rst}
 .. autoclass:: panelsfa.base._BaseSFA
    :members:
    :undoc-members:
 
-```
+
 
 ## Cross-Sectional
 
-```{eval-rst}
+{eval-rst}
 .. autoclass:: panelsfa.CrossSectionalSFA
    :members:
    :show-inheritance:
 
-```
+
 
 ## Standard Panel
 
-```{eval-rst}
+{eval-rst}
 .. autoclass:: panelsfa.TimeDecayPanelSFA
    :members:
    :show-inheritance:
@@ -30,11 +30,11 @@ This section provides auto-generated documentation from the PanelSFA source code
    :members:
    :show-inheritance:
 
-```
+
 
 ## Unobserved Heterogeneity
 
-```{eval-rst}
+{eval-rst}
 .. autoclass:: panelsfa.TrueFixedEffectsSFA
    :members:
    :show-inheritance:
@@ -43,13 +43,13 @@ This section provides auto-generated documentation from the PanelSFA source code
    :members:
    :show-inheritance:
 
-```
+
 
 ## Multi-Component
 
-```{eval-rst}
+{eval-rst}
 .. autoclass:: panelsfa.FourComponentSFA
    :members:
    :show-inheritance:
 
-```
+
