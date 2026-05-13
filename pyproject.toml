@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "panelsfa"
+description = "Parametric Stochastic Frontier Analysis with a scikit-learn API"
+version = "0.1.1"
+readme = {file = "README.md", content-type = "text/markdown"}
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Mathematics",
+]
+dependencies = [
+    "numpy>=1.23",
+    "scipy>=1.9",
+    "scikit-learn>=1.2",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/rrawatt/PanelSFA"
+"Bug Tracker" = "https://github.com/rrawatt/PanelSFA/issues"
