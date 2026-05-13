@@ -24,7 +24,9 @@ This section provides auto-generated documentation from the PanelSFA source code
 .. autoclass:: panelsfa.TimeDecayPanelSFA
    :members:
    :show-inheritance:
+```
 
+```{eval-rst}
 .. autoclass:: panelsfa.EffectsPanelSFA
    :members:
    :show-inheritance:
@@ -36,7 +38,9 @@ This section provides auto-generated documentation from the PanelSFA source code
 .. autoclass:: panelsfa.TrueFixedEffectsSFA
    :members:
    :show-inheritance:
+```
 
+```{eval-rst}
 .. autoclass:: panelsfa.TrueRandomEffectsSFA
    :members:
    :show-inheritance:
