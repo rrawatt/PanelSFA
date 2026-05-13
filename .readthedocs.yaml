@@ -1,0 +1,22 @@
+# .readthedocs.yaml
+# Read the Docs configuration file
+# See https://docs.readthedocs.io/en/stable/config-file/v2.html for details
+
+version: 2
+
+build:
+  os: ubuntu-22.04
+  tools:
+    python: "3.11"
+
+sphinx:
+  builder: html
+  configuration: docs/source/conf.py
+
+python:
+  install:
+    # 1. Install the dependencies needed to build the docs
+    - requirements: docs/requirements.txt
+    # 2. Install PanelSFA itself so autodoc can pull the docstrings
+    - method: pip
+      path: .
