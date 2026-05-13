@@ -10,7 +10,7 @@ It is designed to replicate the robustness of **Stata** and **Frontier 4.1**, bu
 
 ## 1. Core Architecture & Design Philosophy
 
-`PanelSFA` intentionally abandons "formula-style" strings (like R) in favor of **explicit matrix inputs**. All models inherit from the standard `scikit-learn` framework.
+`PanelSFA` models inherit from the standard `scikit-learn` framework.
 
 * **No Magic Intercepts:** You must manually provide an intercept column (a column of 1.0s) in your X and Z matrices.
 * **Unconstrained Optimization:** Internally, variances are optimized using logarithms, and ratios using logit transforms, avoiding the boundaries that crash other SFA libraries. The user-facing attributes are automatically transformed back to their natural economic scale.
